@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     // MARK: - Outlets and Properties
     var playerTurnX = true
+    let game = TicTacToeBrain()
     
     // MARK: - Lifecycle methods
   override func viewDidLoad() {
@@ -19,103 +20,33 @@ class ViewController: UIViewController {
     
     // MARK: - Actions and Methods
 
-    @IBAction func resetGame(_ sender: Any) {
+    @IBAction func resetGame(_ sender: UIButton) {
+        game.reset(sender)
     }
     
     @IBAction func buttonPressed(_ sender: UIButton) {
         switch sender.tag {
         case 0:
-            
-            if playerTurnX {
-                sender.setTitle("X", for: UIControl.State.normal)
-                playerTurnX = false
-            } else {
-                sender.setTitle("O", for: UIControl.State.normal)
-                playerTurnX = true
-            }
-
+            game.playerMove(sender)
         case 1:
-            if playerTurnX {
-                sender.setTitle("X", for: UIControl.State.normal)
-                playerTurnX = false
-            } else {
-                sender.setTitle("O", for: UIControl.State.normal)
-                playerTurnX = true
-            }
-
-            
+            game.playerMove(sender)
         case 2:
-            if playerTurnX {
-                sender.setTitle("X", for: UIControl.State.normal)
-                playerTurnX = false
-            } else {
-                sender.setTitle("O", for: UIControl.State.normal)
-                playerTurnX = true
-            }
-
-            
+            game.playerMove(sender)
         case 3:
-            if playerTurnX {
-                sender.setTitle("X", for: UIControl.State.normal)
-                playerTurnX = false
-            } else {
-                sender.setTitle("O", for: UIControl.State.normal)
-                playerTurnX = true
-            }
-
-            
+            game.playerMove(sender)
         case 4:
-            if playerTurnX {
-                sender.setTitle("X", for: UIControl.State.normal)
-                playerTurnX = false
-            } else {
-                sender.setTitle("O", for: UIControl.State.normal)
-                playerTurnX = true
-            }
-
-            
+            game.playerMove(sender)
         case 5:
-            if playerTurnX {
-                sender.setTitle("X", for: UIControl.State.normal)
-                playerTurnX = false
-            } else {
-                sender.setTitle("O", for: UIControl.State.normal)
-                playerTurnX = true
-            }
-
-            
+            game.playerMove(sender)
         case 6:
-            if playerTurnX {
-                sender.setTitle("X", for: UIControl.State.normal)
-                playerTurnX = false
-            } else {
-                sender.setTitle("O", for: UIControl.State.normal)
-                playerTurnX = true
-            }
-
-            
+            game.playerMove(sender)
         case 7:
-            if playerTurnX {
-                sender.setTitle("X", for: UIControl.State.normal)
-                playerTurnX = false
-            } else {
-                sender.setTitle("O", for: UIControl.State.normal)
-                playerTurnX = true
-            }
-
-            
+            game.playerMove(sender)
         case 8:
-            if playerTurnX {
-                sender.setTitle("X", for: UIControl.State.normal)
-                playerTurnX = false
-            } else {
-                sender.setTitle("O", for: UIControl.State.normal)
-                playerTurnX = true
-            }
-
-
+            game.playerMove(sender)
+            
         default:
-            print("hell")
+            print("hell0")
         }
     }
     

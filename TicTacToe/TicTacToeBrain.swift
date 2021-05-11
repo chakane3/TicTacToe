@@ -22,6 +22,12 @@ class TicTacToeBrain {
             playerTurnX = true
         }
     }
+    
+    func reset(_ sender: UIButton) {
+        for i in 0...8 {
+            
+        }
+    }
 
   
 }

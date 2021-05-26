@@ -12,6 +12,8 @@ import UIKit
 class TicTacToeBrain {
     var playerTurnX = true
     
+
+    
     
     func playerMove(_ sender: UIButton) {
         if playerTurnX {

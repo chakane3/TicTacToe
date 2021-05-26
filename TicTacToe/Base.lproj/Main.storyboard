@@ -23,6 +23,9 @@
                                 <state key="normal">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="V4h-M5-n6C"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W5N-Pp-BYP">
                                 <rect key="frame" x="268" y="140" width="105" height="98"/>
@@ -42,6 +45,9 @@
                                 <state key="normal">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VTi-9g-6dw"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e4E-d8-KcJ">
                                 <rect key="frame" x="154" y="246" width="105" height="98"/>
@@ -129,6 +135,17 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="button1" destination="3ZM-Zt-ZfJ" id="dM2-Xx-XUx"/>
+                        <outlet property="button2" destination="h9s-zI-4jw" id="Hv8-WV-nVa"/>
+                        <outlet property="button3" destination="W5N-Pp-BYP" id="B7x-R0-Nhc"/>
+                        <outlet property="button4" destination="431-e9-5rP" id="eX3-8P-De0"/>
+                        <outlet property="button5" destination="e4E-d8-KcJ" id="O7K-A3-fvH"/>
+                        <outlet property="button6" destination="xJY-Kf-Eyn" id="3Wb-eu-eLM"/>
+                        <outlet property="button7" destination="exN-8h-GIP" id="QfC-ty-Tvh"/>
+                        <outlet property="button8" destination="FQG-AX-oor" id="SZu-7o-VEZ"/>
+                        <outlet property="button9" destination="WBc-cs-tYv" id="zT7-Od-fuL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
